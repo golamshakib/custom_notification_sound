@@ -43,6 +43,10 @@ dependencies:
   # State Management
   get: ^4.6.6
   flutter_spinkit: ^5.2.1
+  flutter_local_notifications: ^18.0.1
+  firebase_core:
+  firebase_messaging:
+
 
 dev_dependencies:
   flutter_test:
