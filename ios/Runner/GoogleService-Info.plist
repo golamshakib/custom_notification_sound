@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDIVwwGxqN7irNgL3s8yKbo4MpRoKuQunY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>566049729985</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.customnotification.sound.customNotificationSound</string>
+	<key>PROJECT_ID</key>
+	<string>custom-notification-sound-uber</string>
+	<key>STORAGE_BUCKET</key>
+	<string>custom-notification-sound-uber.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:566049729985:ios:5cbcfd34ede6a602ced340</string>
+</dict>
+</plist>
