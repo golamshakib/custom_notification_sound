@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -46,8 +47,8 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAZbehwTGoH3CsuPZ30u_TeQE4Jj1hzYKU',
+  static FirebaseOptions web = FirebaseOptions(
+    apiKey: '${dotenv.env['Firebase_web_api_key']}',
     appId: '1:566049729985:web:df8197eee164b242ced340',
     messagingSenderId: '566049729985',
     projectId: 'custom-notification-sound-uber',
@@ -56,16 +57,16 @@ class DefaultFirebaseOptions {
     measurementId: 'G-5NVP5MJDMP',
   );
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBu-Gjj2PoJUbgiA2Ka4fjMj_bmGqXfwmA',
+  static FirebaseOptions android = FirebaseOptions(
+    apiKey: '${dotenv.env['Firebase_android_api_key']}',
     appId: '1:566049729985:android:7dda2f611a0c7a61ced340',
     messagingSenderId: '566049729985',
     projectId: 'custom-notification-sound-uber',
     storageBucket: 'custom-notification-sound-uber.firebasestorage.app',
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDIVwwGxqN7irNgL3s8yKbo4MpRoKuQunY',
+  static FirebaseOptions ios = FirebaseOptions(
+    apiKey: '${dotenv.env['Firebase_ios_api_key']}',
     appId: '1:566049729985:ios:5cbcfd34ede6a602ced340',
     messagingSenderId: '566049729985',
     projectId: 'custom-notification-sound-uber',
